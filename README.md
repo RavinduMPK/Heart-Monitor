@@ -1,10 +1,13 @@
-# Heart-Rate-Monitor
+# Heart-Monitor
 
 During our third semester, we successfully designed an Analog Heart Rate Monitor, bringing together the realms of technology and healthcare. The project was also showcased for **EXMO'23** the flagship technological exhibition of the University of Moratuwa as a biomedical application of electronics and technology. 
 
 Our team, consisting of Malith, Ravindu, Umesha, and Dilupa, were able to apply our knowledge of circuit design, PCB design, enclosure design, and software integration to create a device that progresses from sensing the heart rate to amplifying and filtering the signal, culminating in the display of the refined waveform. The main circuitry of the device was developed utilizing analog electronic components, as a learning opportunity of analog electronics as well. 
 
 With the user-friendly interface, we were able to output a patient's ECG waveform in real-time and also tune the signal when necessary. Our project's output results were compared favorably and accurately to a commercial patient monitor. With the wealth of practical and hands-on experience we've acquired, we are poised to continue making impactful contributions to the advancement of healthcare through technology.
+
+![Final Product](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/454fb58f-91da-467a-b9a8-bbf21c9933de)
+
 
 What you can find here:
 
@@ -15,11 +18,6 @@ What you can find here:
 - Enclosure Designs
 
   
-## The Enclosure Design
-The enclosure was designed by Solidworks software. It contains a removable top lid, a removable front, and the main body. The removability was integrated to fix and replace components. Holes surrounding the box are integrated to ensure that the heat flow to the outside of the box due to the power components inside. A fan is also connected inside to help with this. The front contains the display and also the knobs for tuning the filters. The switch on top switches off the device, and can be used for temporary situations. And the switch at the back, switches off the transformer as well, saving
-the power loss that happens at the transformer. The enclosure also contains holes containing the adapters to connect the power cable and also to
-connect the 3.5mm jack.
-
 ## The Circuit Design
 The ECG circuit mainly consists of 5 blocks. Those are,
 - Right Leg Drive Circuit
@@ -77,3 +75,15 @@ To accommodate variations in the interference and notch frequency, we included a
 With these components and configurations, our analog heart rate monitor circuit is capable of capturing, amplifying, and filtering the ECG signal to produce a clean and accurate representation of the heart's electrical activity. The combination of the right leg drive circuit, instrumentation amplifier, low pass filter, high pass filter, and notch filter results in a robust ECG measurement system suitable for biomedical applications.
 
 ![Notch Filter](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/1d7f39b8-2c61-457f-9e86-2a0f7a5d13a9)
+
+## The Enclosure Design
+The enclosure was designed by Solidworks software. It contains a removable top lid, a removable front, and the main body. The removability was integrated to fix and replace components. Holes surrounding the box are integrated to ensure that the heat flow to the outside of the box due to the power components inside. A fan is also connected inside to help with this. The front contains the display and also the knobs for tuning the filters. The switch on top switches off the device, and can be used for temporary situations. And the switch at the back, switches off the transformer as well, saving
+the power loss that happens at the transformer. The enclosure also contains holes containing the adapters to connect the power cable and also to
+connect the 3.5mm jack.
+
+![Enclosure main](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/63fa4ae4-495b-48c7-b518-86d78dae3c7f)
+![Enclosure full](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/7e869948-9356-44c6-90ee-c38deb6e10b9)
+![Enclosure front](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/64865f30-f25c-416d-b457-e19af9d8d806)
+
+## PCB Design
+
