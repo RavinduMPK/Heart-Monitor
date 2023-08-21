@@ -16,6 +16,7 @@ What you can find here:
 - Schematic Diagrams
 - PCB Designs
 - Enclosure Designs
+- Arduino program file
 
   
 ## The Circuit Design
@@ -76,6 +77,11 @@ With these components and configurations, our analog heart rate monitor circuit 
 
 ![Notch Filter](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/1d7f39b8-2c61-457f-9e86-2a0f7a5d13a9)
 
+## Simulation 
+We used LTspice software to simulate and verify our circuit.
+![Simulation](https://github.com/RavinduMPK/Heart-Monitor/assets/68577937/e6302d45-ac85-45a4-b084-3bd74ee4f556)
+
+
 ## The Enclosure Design
 The enclosure was designed by Solidworks software. It contains a removable top lid, a removable front, and the main body. The removability was integrated to fix and replace components. Holes surrounding the box are integrated to ensure that the heat flow to the outside of the box due to the power components inside. A fan is also connected inside to help with this. The front contains the display and also the knobs for tuning the filters. The switch on top switches off the device, and can be used for temporary situations. And the switch at the back, switches off the transformer as well, saving
 the power loss that happens at the transformer. The enclosure also contains holes containing the adapters to connect the power cable and also to
@@ -86,4 +92,35 @@ connect the 3.5mm jack.
 ![Enclosure front](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/64865f30-f25c-416d-b457-e19af9d8d806)
 
 ## PCB Design
+The heart rate monitor's PCB design involved several key considerations that contributed to the final product's performance and reliability. One of the pivotal decisions was the configuration of a 4-layer PCB. This choice allowed us to take advantage of its multilayer structure for improved signal integrity, reduced interference, and effective heat dissipation.
 
+The arrangement of the layer stack was meticulously planned to optimize the PCB's performance. By thoughtfully allocating power and ground planes and strategically positioning signal traces, we aimed to create a layout that minimized noise and interference while providing stable voltage references for our sensitive analog components.
+
+In the process of routing traces, special attention was given to the layout's integrity. We took great care to minimize issues such as cross-talk, impedance mismatches, and electromagnetic interference.
+
+![PCB layers](https://github.com/RavinduMPK/Heart-Monitor/assets/68577937/150bae9f-5a67-423e-9dfb-7b03b823cc1d)
+
+
+The placement of components on the PCB played a vital role in achieving signal fidelity and effective thermal management. Components were arranged to minimize signal distortion and ensure efficient heat dissipation. By considering the interaction between components, we aimed to create a layout that enhanced the overall functionality and reliability of the heart rate monitor.
+
+![PCB](https://github.com/RavinduMPK/Heart-Monitor/assets/68577937/8c99865e-4b09-4ce2-b97c-d1f84e28f4a3)
+
+
+Upon finalizing the PCB design, we collaborated with JLC PCB, a reputable PCB manufacturer, for production. Their expertise and advanced manufacturing processes ensured the accurate reproduction of our design.
+
+## Testing and Final Results
+Throughout the development of our heart rate monitor project, rigorous testing played a pivotal role in ensuring the accuracy and reliability of our device. Initially, we implemented the circuit on breadboards, meticulously connecting components and validating the functionality of each stage. This iterative testing approach allowed us to address any issues early in the design process and refine our circuitry.
+
+![Bread board implementation](https://github.com/RavinduMPK/Heart-Monitor/assets/68577937/c539a9f8-8300-4d57-9779-7e09ab78fd8f)
+
+
+To observe the ECG waveform and monitor signal behavior, we utilized an oscilloscope. This powerful tool enabled us to visualize the signal characteristics, detect any anomalies, and fine-tune our circuit parameters for optimal performance.
+
+![Testing process](https://github.com/RavinduMPK/Heart-Monitor/assets/68577937/bb8351ab-215e-4faa-a027-d4a9d5e71e0d)
+
+
+Recognizing the dynamic nature of power line interference, we introduced variable resistors into the notch filter circuit. This innovation provided us with the flexibility to adjust the notch filter frequency as needed. By adapting to variations in interference over time, we could consistently attain a clean and accurate ECG waveform.
+
+After iterative adjustments and thorough testing, we achieved our goal: a heart rate monitor that delivered more accurate and reliable ECG waveforms. The collective efforts of our team, from circuit design and simulation to PCB layout and meticulous testing, culminated in a final product that accurately captures and displays the heart's electrical activity. This accomplishment underscored the success of our project and its potential to make meaningful contributions to healthcare through technology.
+
+![Final result](https://github.com/RavinduMPK/Heart-Monitor/assets/68577937/c25034df-b008-4fa7-9e9e-cfb0dca2fa15)
