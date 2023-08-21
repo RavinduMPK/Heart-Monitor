@@ -36,6 +36,7 @@ The right leg drive circuit (DRL) is used to reduce common-mode interference. Co
 The DRL circuit works by injecting a known voltage into the right-leg electrode. This voltage is equal to the common-mode voltage that is being picked up by the other electrodes. The ECG amplifier then subtracts this known voltage from the signal from the other electrodes, effectively canceling out the common-mode noise.
 
 The DRL circuit is typically used in conjunction with other methods of noise reduction, such as filtering and shielding. The choice of which methods to use depends on the specific application.
+
 ![Leg Drive](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/86a97f20-2295-4d15-8020-3b00e7a9c400)
 
 ### Instrumentation Amplifier
@@ -45,10 +46,16 @@ The instrumentation amplifier consists of multiple operational amplifiers arrang
 
 In addition to amplifying the ECG signal, the instrumentation amplifier also provides a means to adjust the gain as needed. This enables customization of the signal's amplitude for optimal visualization on the display.
 
+![Instrumentation Amplifier](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/015c5d71-d8f8-4ec5-9b28-d0a003c3f251)
+
+
 ### Low Pass Filter
 We implemented a 5th order Bessel-Thompson low pass filter in our circuit. This filter is designed to attenuate high-frequency noise and unwanted components beyond a certain cutoff frequency while preserving the integrity of the ECG signal. The Bessel filter is chosen for its minimal group delay, which helps maintain the shape and timing of the ECG waveform.
 
 The Bessel-Thompson filter comprises a series of cascaded first-order and second-order active filter stages. These stages collectively contribute to the filter's response, ensuring that frequencies beyond the cutoff are effectively attenuated while minimizing distortion and phase shift. By carefully selecting the filter's components and structure, we ensure that the amplified ECG signal is clean and devoid of high-frequency noise.
+
+![Low Pass filter](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/13c71354-1cb5-4124-a9d2-e7441a87ed54)
+
 
 ### High Pass Filter
 Our ECG circuit incorporates a 3rd order active inverting Butterworth high-pass filter. This filter serves multiple purposes, including removing the DC offset that may develop between the electrodes and further amplifying the signal.
@@ -56,6 +63,9 @@ Our ECG circuit incorporates a 3rd order active inverting Butterworth high-pass 
 The high-pass filter's design focuses on attenuating low-frequency components, which typically include DC offset and slow baseline drift. The filter's configuration involves a cascade of a second-order active non-inverting stage followed by a first-order active inverting stage. The combined effect of these stages results in eliminating DC offset while providing additional signal amplification.
 
 A variable resistor is integrated into the high-pass filter, allowing us to adjust the gain of the first-order filter stage according to the requirements of the specific ECG measurement.
+
+![High pass filter](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/19fe519a-622e-497f-89b8-971e35396121)
+
 
 ### Notch Filter
 To eliminate the interference caused by the 50 Hz power line frequency, we integrated a Twin-T type notch filter into our ECG circuit.
@@ -65,3 +75,5 @@ The Twin-T notch filter is known for its ability to provide a deep notch at a sp
 To accommodate variations in the interference and notch frequency, we included a variable resistor that allows us to adjust the Q factor and achieve optimal filtering. This ensures that the ECG waveform remains free from the influence of power line noise, contributing to accurate and reliable heart rate measurements.
 
 With these components and configurations, our analog heart rate monitor circuit is capable of capturing, amplifying, and filtering the ECG signal to produce a clean and accurate representation of the heart's electrical activity. The combination of the right leg drive circuit, instrumentation amplifier, low pass filter, high pass filter, and notch filter results in a robust ECG measurement system suitable for biomedical applications.
+
+![Notch Filter](https://github.com/RavinduMPK/Heart-Rate-Monitor/assets/68577937/1d7f39b8-2c61-457f-9e86-2a0f7a5d13a9)
