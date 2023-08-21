@@ -13,3 +13,6 @@ Furthermore, LTspice aided us in pinpointing potential areas of concern, such as
 The LTspice simulations also helped us validate our circuit's functionality under various scenarios, such as different heart rate patterns and noise interference. This extensive testing gave us confidence that our heart rate monitor would perform accurately in real-world situations.
 
 ![Simulation](https://github.com/RavinduMPK/Heart-Monitor/assets/68577937/20722097-507d-4251-aa88-b2f66326b196)
+
+*_And also we used ECG waveform sample signal to verify our circuit_*
+
