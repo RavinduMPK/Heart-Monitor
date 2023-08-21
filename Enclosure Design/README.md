@@ -16,4 +16,5 @@ The culmination of our enclosure design was achieved through local 3D printing. 
 
 In essence, our Solidworks-based enclosure design was a testament to our commitment to detail and functionality. By thoughtfully considering the arrangement of components, thermal management, user interaction, and structural integrity, we created a housing that complemented the sophistication of our internal circuitry. The successful local 3D printing of the enclosure brought our design to life, underscoring the importance of an integrated and holistic approach to device development.
 
-![Enclosure](https://github.com/RavinduMPK/Heart-Monitor/assets/68577937/0b1e4fed-f59d-4381-9eb2-7aa42eeb5c48)
+
+![Enclosure](https://github.com/RavinduMPK/Heart-Monitor/assets/68577937/2431fe4e-e3f5-44ac-86ff-e495435efc98)
