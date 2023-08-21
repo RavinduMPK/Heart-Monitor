@@ -8,10 +8,14 @@ With the user-friendly interface, we were able to output a patient's ECG wavefo
 
 What you can find here:
 
--Circuit Design
--Simulation Files
--Schematic Diagrams
--PCB Designs
--Enclosure Designs
+- Circuit Design
+- Simulation Files
+- Schematic Diagrams
+- PCB Designs
+- Enclosure Designs
+
+The enclosure was designed by Solidworks software. It contains a removable top lid, a removable front, and the main body. The removability was integrated to fix and replace components. Holes surrounding the box are integrated to ensure that the heat flow to the outside of the box due to the power components inside. A fan is also connected inside to help this. The front contains the display and also the knobs for tuning the filters. The switch on top switches off the device, and can be used for temporary situations. And the switch at the back, switches off the transformer as well, saving
+the power loss that happens at the transformer. The enclosure also contains holes containing the adapters to connect the power cable and also to
+connect the 3.5mm jack.
 
  #HealthTech #MedicalDevices
